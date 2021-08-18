@@ -23,6 +23,9 @@ document.getElementById('calc-body').addEventListener('click', function (event) 
         if (targetKey == 'C') {
             pressedKey.value = '';
         }
+        else if (targetKey == '<') {
+            pressedKey.value = pressedKey.value.slice(0, - 1);
+        }
     }
     else {
         const previousKey = pressedKey.value;
